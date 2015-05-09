@@ -1,0 +1,7 @@
+{
+  "name": "dc",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
