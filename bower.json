@@ -2,6 +2,8 @@
   "name": "dc",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "materialize": "~0.96.1",
+    "normalize.css": "~3.0.3"
   }
 }
