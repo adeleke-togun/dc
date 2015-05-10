@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict'
 
 var dc = {
@@ -10,19 +9,18 @@ var dc = {
     };
   },
 
+  scrollFire: function(){
+		var options = [
+	    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
+	    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
+	  ];
+	  Materialize.scrollFire(options);
+  },
+
   init: function () {
     dc.getBrowserWindow();
+    dc.scrollFire();
   }
 };
 
 $(document).ready(dc.init);
-
-=======
-$(document).ready(function(){
-	var options = [
-    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
-    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
-  ];
-  Materialize.scrollFire(options);
-});
->>>>>>> link components
