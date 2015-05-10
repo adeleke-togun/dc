@@ -6,7 +6,12 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.boy {
-	width:100%;
-	height:100%
+.poster {
+  background: url(../img/boy.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
