@@ -4,4 +4,18 @@ body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 }
+=======
+}
+
+#section0 .poster{
+  background: url(../img/boy.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+>>>>>>> b7745840815605ec72b215b23c3860f03f2aae72
