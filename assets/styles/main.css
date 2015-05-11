@@ -6,7 +6,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.poster {
+#section0 .poster{
   background: url(../img/boy.jpg) center center no-repeat;
   background-size: cover;
   position: absolute;

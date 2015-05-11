@@ -19,10 +19,10 @@ var dc = {
 
   fullpage: function () {
     $('#fullpage').fullpage({
-      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+      anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#menu',
-      scrollingSpeed: 1000
+      scrollingSpeed: 600
     });
   },
 
