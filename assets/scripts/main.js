@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var dc = {
   getBrowserWindow: function () {
@@ -19,7 +19,7 @@ var dc = {
 
   fullpage: function () {
     $('#fullpage').fullpage({
-      sectionsColor: ['transparent', 'transparent', 'transparent'],
+      sectionsColor: ['#1bbc9b'],
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#menu',
       scrollingSpeed: 600
