@@ -19,7 +19,7 @@ var dc = {
 
   fullpage: function () {
     $('#fullpage').fullpage({
-      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+      sectionsColor: ['#1bbc9b'],
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#menu',
       scrollingSpeed: 600
