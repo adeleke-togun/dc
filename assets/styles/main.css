@@ -14,3 +14,41 @@ body{
   width: 100%;
   height: 100%;
 }
+
+#section2{
+  margin-top: -10px;
+}
+
+#section2 #aLot{
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal !important;
+}
+
+#section2 #nowWe{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#section2 #weAre{
+  color: #636363;
+  margin-top: 30px;
+  font-weight: normal !important;
+  font-size: 19px;
+}
+
+#section2 .row{
+  border:0px solid red;
+  margin-bottom: 0px;
+  margin-top: 0!important;
+}
+
+#section2 .support{
+  margin-top: 85px !important;
+}
+
+#section2 .support .col{
+  text-align: center;
+  vertical-align: text-top;
+  border:0px solid red;
+}
