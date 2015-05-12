@@ -1,11 +1,11 @@
 
-body{
+body {
   background: #ffffff;
   color: #333;
   font-family: 'Roboto', sans-serif;
 }
 
-#section0 .poster{
+#section0 .poster {
   background: url(../img/boy.jpg) center center no-repeat;
   background-size: cover;
   position: absolute;
@@ -55,4 +55,33 @@ body{
   text-align: center;
   vertical-align: text-top;
   border:0px solid red;
+}
+.poster h1 {
+  /*margin: 10px 20px;*/
+  font-size: 3em;
+  /*text-shadow: 1px -1px 4px blue, 1px 2px 10px white, 1px 10px 20px blue;*/
+}
+header {
+  padding: 5px 15px;
+  color: #fbfbef;
+}
+header h1, ul{
+  display: inline;
+}
+
+header ul{
+  padding: 10px 15px;
+  background: #00BFFF;
+}
+
+.poster, .text-poster {
+  font-family: 'Raleway' sans-serif;
+}
+
+.text-poster {
+  color: #fbfbef;
+  margin: 12em 3em;
+  font-size: 1.5em;
+  padding: 15px 10px;
+  width: 25em;
 }
