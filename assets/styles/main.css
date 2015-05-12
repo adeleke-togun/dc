@@ -43,8 +43,12 @@ body{
   margin-top: 0!important;
 }
 
+#section2 .imgs{
+  width: 100px;
+}
+
 #section2 .support{
-  margin-top: 85px !important;
+  margin-top: 35px !important;
 }
 
 #section2 .support .col{
