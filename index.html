@@ -36,21 +36,30 @@
     </div>
 
     <div class="container section" id="section1">
-        <div class="row">
-          <div class="col l9 m12 center-align">
-            We will be accepting development orders until
-            <div id="clock-timer"></div>
-          </div>
-          <div class="row">
-          <div class="col l9 m12 center-align">
-            We will be accepting development orders until
-            <div id="clock-timer"></div>
-          </div>
-          </div>
-        </div>
-
+      <div class="row">
+        <ul class="countdown">
+          <li>
+            <span class="days">00</span>
+            <p class="days_ref">days</p>
+          </li>
+          <li class="seperator">.</li>
+          <li>
+            <span class="hours">00</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="seperator">:</li>
+          <li>
+            <span class="minutes">00</span>
+            <p class="minutes_ref">minutes</p>
+          </li>
+          <li class="seperator">:</li>
+          <li>
+            <span class="seconds">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>
+        </ul>
+      </div>
     </div>
-
 
     <!-- Bottom Page UDO: working on this -->
     <div class="container section" id="section2">
@@ -112,14 +121,16 @@
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
-  <!-- endbower -->
+  <script src="jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="bower_components/downcount/jquery.downCount.js"></script>
+
   <!-- endbuild -->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
-  <script type="text/javascript" src="bower_components/countdownjs/countdown.min.js"></script>
+  <!-- <script type="text/javascript" src="bower_components/countdownjs/countdown.js"></script> -->
   <script src="assets/scripts/main.js"></script>
   <!-- endbuild -->
 </body>
