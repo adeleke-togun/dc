@@ -1,8 +1,39 @@
-
 body {
   background: #ffffff;
   color: #333;
   font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  line-height: 1.125em;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+h1 {
+  font -size: 5.375em;
+  line-height: 1.636em;
+  margin: 0;
+}
+h2 {
+  font-size: 1.125em;
+  margin: 1em 0;
+}
+h3 {
+  font-size: 1.125em;
+  margin: 0.8em 0;
+}
+h4 {
+  font-size: 1.125em;
+  margin: 0.8em 0;
+}
+p {
+  font-size: 0.875em;
+  margin: 1.286em 0;
+}
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 75%
+  }
 }
 
 #section0 .poster {
@@ -61,33 +92,32 @@ body {
   border:0px solid red;
 }
 .poster h1 {
-  /*margin: 10px 20px;*/
-  font-size: 3em;
-  /*text-shadow: 1px -1px 4px blue, 1px 2px 10px white, 1px 10px 20px blue;*/
+  font-size: 2em;
 }
+
 header {
-  padding: 5px 15px;
+  padding: 20px 35px;
   color: #fbfbef;
 }
-header h1, ul{
+
+header h1, ul, img{
   display: inline;
+  vertical-align: middle;
 }
 
 header ul{
-  padding: 10px 15px;
-  background: #00BFFF;
-}
-
-.poster, .text-poster {
-  font-family: 'Raleway' sans-serif;
+  padding: 10px 25px;
+  background: #2ECCFA;
+  color: #fbfbef;
 }
 
 .text-poster {
+  background-color: #2ECCFA;
   color: #fbfbef;
-  margin: 12em 3em;
-  font-size: 1.5em;
-  padding: 15px 10px;
-  width: 25em;
+  width:30em;
+  margin: 18em 3em;
+  font-size: 1em;
+  padding: 15px 15px;
 }
 
 
@@ -117,5 +147,49 @@ ul.countdown li p {
     font-size: 14px;
 }
 
+#section0 .poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.5)
+}
 
+#section0 .container {
+  padding-top: 240px;
+}
 
+#section0 .main-text {
+  color: #FFF1F1;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {}
+
+.main-text h1 {
+  font-family: 'Raleway',
+  sans-serif;
+  font-weight: 700;
+  font-size: 4.5em;
+  text-align: center;
+  color: #FFF1F1;
+  margin-bottom: 30px;
+  line-height: 4.2rem;
+}
+
+#header {
+  position: fixed;
+  height: 50px;
+  display: block;
+  width: 100%;
+  background: #aea;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+}
+
+#header {
+  top: 0px;
+}
