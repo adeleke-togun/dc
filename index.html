@@ -11,34 +11,35 @@
   <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700,500|Droid+Sans:400,700|Lobster|Pacifico|Quicksand|signika|Crafty+Girls|Raleway:200,400,600' rel='stylesheet' type='text/css'>
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="assets/styles/main.css">
-  <!-- endbuild -->
+  <link rel="stylesheet" href="assets/styles/inview.css">
 </head>
 
 <body>
   <div id="fullpage">
-    <div class="section" id="section0">
+    <section class="section" id="section0">
       <div class="poster">
         <header class="navbar navbar-fixed-top">
-          <!-- <img src="assets/img/dc_logo1.png" alt="logo" height="80px" width:"80px"> -->
-          <a href="index.html"><img src="assets/img/now-we-give-brand-white.png" alt="logo" height="80px" width:"80px"></a>
-          <!-- <h1> now we give</h1> -->
-          <a href="index.html"><ul class="right sidenav"><li>Apply</li></ul></a>
+          <a href="index.html"><img src="assets/img/logo-white.png" alt="logo" height="80px" width: "80px"></a>
+          <a href="index.html">
+            <ul class="right sidenav">
+              <li>Apply</li>
+            </ul>
+          </a>
         </header>
-         <div class= "text-poster left-align">
-          <h4>LOREM IPSUM DOLOR</h4>
+        <div class="text-poster center-align">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas turpis hendrerit ante auctor bibendum</p>
         </div>
       </div>
-    </div>
+      <div class="poster-overlay">
+        <div class="wrapper">
+          <div class="col l4 offset-l8 main-text check-inview fadeup">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="section" id="section1">
+    <section class="section" id="section1">
       <div class="row">
         <ul class="countdown">
           <li>
@@ -62,10 +63,10 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <!-- Bottom Page UDO: working on this -->
-    <div class="container section" id="section2">
+    <section class="container section" id="section2">
       <div class="row" id="image-test">
         <div class="col s10 offset-s1">
           <div class="row">
@@ -100,6 +101,7 @@
             </div>
             <div class="col l9 m12" style="padding-top:30px;">
               giving out all profits to a children's charity whose vision is to..
+
             </div>
           </div>
           <!-- List of companies -->
@@ -111,31 +113,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 
-
-  <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
-  <script src="jquery.countdown.min.js"></script>
   <script type="text/javascript" src="bower_components/downcount/jquery.downCount.js"></script>
-
-  <!-- endbuild -->
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-
-  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="bower_components/jquery-easing-original/jquery.easing.min.js"></script>
   <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
-  <!-- <script type="text/javascript" src="bower_components/countdownjs/countdown.js"></script> -->
   <script src="assets/scripts/main.js"></script>
-  <!-- endbuild -->
 </body>
 
 </html>
