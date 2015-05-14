@@ -80,8 +80,12 @@ $(document).ready(dc.init);
 /* Modal Form Stuff */
 $(document).ready(function(){
 
-  var appForm = $("#applicationForm") ;
-  appForm.openModal();
+  var appForm = $("#applicationForm");
+
+  $("#applyBtn").on('click', function(e){
+    e.preventDefault();
+    appForm.openModal();
+  });
 
   appForm.on('submit', function(e){
     e.preventDefault();
