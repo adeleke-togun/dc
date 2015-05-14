@@ -60,24 +60,55 @@ p {
 
 #section2 {
   margin-top: -10px;
+  font-family: Raleway, sans-serif;
 }
 
+<<<<<<< Updated upstream
 #section2 #aLot {
+||||||| merged common ancestors
+#section2 #aLot{
+=======
+#section2 .section2-headline-1 {
+>>>>>>> Stashed changes
   font-style: italic;
   font-size: 18px;
   font-weight: normal !important;
 }
 
+<<<<<<< Updated upstream
 #section2 #nowWe {
+||||||| merged common ancestors
+#section2 #nowWe{
+=======
+#section2 .section2-headline-2 {
+>>>>>>> Stashed changes
   font-size: 18px;
   font-weight: bold;
 }
 
+<<<<<<< Updated upstream
 #section2 #weAre {
   color: #636363;
   margin-top: 30px;
   font-weight: normal !important;
   font-size: 19px;
+||||||| merged common ancestors
+#section2 #weAre{
+  color: #636363;
+  margin-top: 30px;
+  font-weight: normal !important;
+  font-size: 19px;
+=======
+.section2-grid {
+  color: #999;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.promo-caption {
+  font-size: 26px;
+  color: #00BFFF;
+>>>>>>> Stashed changes
 }
 
 #section2 .row {
@@ -161,6 +192,7 @@ ul.countdown li p {
   font-size: 14px;
 }
 
+<<<<<<< Updated upstream
 #section0 .poster-overlay {
   position: absolute;
   top: 0;
@@ -207,3 +239,15 @@ ul.countdown li p {
 #header {
   top: 0px;
 }
+||||||| merged common ancestors
+=======
+/* Required */
+
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+}
+>>>>>>> Stashed changes

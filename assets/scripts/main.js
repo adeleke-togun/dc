@@ -4,9 +4,9 @@ var dc = {
     var width = $(window).width();
     window.onresize = function() {
       width = $(window).width();
-      console.log(width);
     };
   },
+<<<<<<< Updated upstream
   scrollFire: function() {
     var options = [{
       selector: '#staggered-test',
@@ -18,6 +18,23 @@ var dc = {
       callback: 'Materialize.fadeInImage("#image-test")'
     }];
     Materialize.scrollFire(options);
+||||||| merged common ancestors
+
+  scrollFire: function(){
+		var options = [
+	    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
+	    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
+	  ];
+	  Materialize.scrollFire(options);
+=======
+
+  scrollFire: function(){
+		var options = [
+	    {selector: '#staggered-test', offset: 200, callback: 'Materialize.showStaggeredList("#staggered-test")' },
+	    {selector: '#fadeInImage', offset: 50, callback: 'Materialize.fadeInImage("#fadeInImage")' }
+	  ];
+	  Materialize.scrollFire(options);
+>>>>>>> Stashed changes
   },
   fullpage: function() {
     $('#fullpage').fullpage({
