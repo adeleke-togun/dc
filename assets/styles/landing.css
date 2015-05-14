@@ -19,7 +19,11 @@
 
 @media screen and (min-width: 1100px) {
   .kontainer {
+<<<<<<< HEAD
     max-width: 1024px;
+=======
+    max-width: 1200px;
+>>>>>>> 1206f551e97dc13a928f3d6fb22fadd0541bea03
   }
 }
 
@@ -83,7 +87,11 @@ header h1 {
 }
 
 .leading-text {
+<<<<<<< HEAD
   background-color: #04b8cf;
+=======
+  background-color: rgba(4, 184, 207, 0.8);
+>>>>>>> 1206f551e97dc13a928f3d6fb22fadd0541bea03
   color: #fbfbef;
   font-size: 1em;
   padding: 15px !important;
