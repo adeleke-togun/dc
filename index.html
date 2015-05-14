@@ -11,37 +11,47 @@
   <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700,500|Droid+Sans:400,700|Lobster|Pacifico|Quicksand|signika|Crafty+Girls|Raleway:200,400,600' rel='stylesheet' type='text/css'>
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/main.css -->
+
   <link rel="stylesheet" href="assets/styles/main.css">
-  <!-- endbuild -->
+  <link rel="stylesheet" href="assets/styles/inview.css">
+  <link rel="stylesheet" href="assets/styles/landing.css">
 </head>
 
 <body>
   <div id="fullpage">
-    <div class="section" id="section0">
-      <div class="poster animatedParent">
-        <header class="navbar navbar-fixed-top">
-          <!-- <img src="assets/img/dc_logo1.png" alt="logo" height="80px" width:"80px"> -->
-          <a href="index.html"><img src="assets/img/logo-white.png" alt="logo" height="80px" width: "80px"></a>
-          <!-- <h1> now we give</h1> -->
-          <a href="index.html">
-            <ul class="right sidenav animated bounceInLeft slower">
-              <li>Apply</li>
-            </ul>
-          </a>
+    <section class="section" id="section0">
+      <div class="poster">
+        <header>
+          <nav id="mainNav" class="top">
+            <div class="nav-wrapper">
+              <div class="kontainer group">
+                <a href="/">
+                  <h1>Now We Give</h1>
+                </a>
+                <ul class="right sidenav">
+                  <li><a href="#" class="waves-effect waves-light btn">Apply</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header>
-        <div class="text-poster left-align animated growIn slower">
-          <h4>LOREM IPSUM DOLOR</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas turpis hendrerit ante auctor bibendum</p>
+        <div class="row">
+          <div class="group">
+            <div class="kontainer">
+              <div class="col l5">
+                <div class="text-box leading-text">
+                  <h2>Great deal for a Great Cause</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas turpis hendrerit ante auctor bibendum</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="section" id="section1">
+    </section>
+
+
+    <section class="section" id="section1">
       <div class="row animated" data-appear-top-offset='50'>
         <ul class="countdown">
           <li>
@@ -65,9 +75,11 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+
+
     <!-- Bottom Page UDO: working on this/remodelled by Jihdeh -->
-    <div class="container section" id="section2">
+    <section class="container section" id="section2">
       <br/>
       <div class="row center">
         <div class="row">
@@ -102,7 +114,7 @@
         <div class="col s12 m4 l4"><img src="assets/img/cchub.png" width="230px" /></div>
         <div class="col s12 m4 l4"><img src="assets/img/andela.png" width="50px" /></div>
       </div>
-    </div>
+    </section>
   </div>
   <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
