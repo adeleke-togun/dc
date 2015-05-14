@@ -83,7 +83,7 @@ header h1 {
 }
 
 .leading-text {
-  background-color: #04b8cf;
+  background-color: rgba(4, 184, 207, 0.8);
   color: #fbfbef;
   font-size: 1em;
   padding: 15px !important;
