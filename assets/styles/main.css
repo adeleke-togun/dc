@@ -44,6 +44,102 @@ p {
   }
 }
 
+#section1 {
+  background-color: #00BFFF;
+}
+
+#section2 {
+  margin-top: -10px;
+  font-family: Raleway, sans-serif;
+}
+
+#section2 .section2-headline-1 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal !important;
+}
+
+#section2 .section2-headline-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section2-grid {
+  color: #999;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.promo-caption {
+  font-size: 26px;
+  color: #00BFFF;
+}
+
+#section2 .row {
+  border: 0px solid red;
+  margin-bottom: 0px;
+  margin-top: 0!important;
+}
+
+#section2 .imgs {
+  width: 100px;
+}
+
+#section2 .support {
+  margin-top: 35px !important;
+}
+
+#section2 .support .col {
+  text-align: center;
+  vertical-align: text-top;
+  border: 0px solid red;
+}
+
+/*ul,
+img {
+  display: inline;
+  vertical-align: middle;
+}*/
+
+ul.countdown {
+  list-style: none;
+  margin: 75px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+ul.countdown li {
+  display: inline-block;
+}
+
+ul.countdown li span {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  color: #efefef;
+}
+
+ul.countdown li.seperator {
+  font-size: 80px;
+  line-height: 70px;
+  vertical-align: top;
+}
+
+ul.countdown li p {
+  color: #a7abb1;
+  font-size: 14px;
+}
+/* Required */
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 #section0 .poster {
   background: url(../img/boy.jpg) center center no-repeat;
   background-size: cover;
@@ -62,18 +158,18 @@ p {
   margin-top: -10px;
 }
 
-#section2 #aLot {
+#section2 .section2-headline-1 {
   font-style: italic;
   font-size: 18px;
   font-weight: normal !important;
 }
 
-#section2 #nowWe {
+#section2 .section2-headline-2 {
   font-size: 18px;
   font-weight: bold;
 }
 
-#section2 #weAre {
+#section2 .promo-caption {
   color: #636363;
   margin-top: 30px;
   font-weight: normal !important;

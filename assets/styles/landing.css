@@ -91,7 +91,7 @@ header h1 {
 
 .leading-text h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 700;
   margin: 5px;
   line-height: 1.2;
@@ -101,4 +101,7 @@ header h1 {
 
 .leading-text p {
   margin: 5px;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1em;
 }

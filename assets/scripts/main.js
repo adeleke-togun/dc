@@ -4,7 +4,6 @@ var dc = {
     var width = $(window).width();
     window.onresize = function() {
       width = $(window).width();
-      console.log(width);
     };
   },
   scrollFire: function() {
