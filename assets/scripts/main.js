@@ -75,3 +75,26 @@ var dc = {
   }
 };
 $(document).ready(dc.init);
+
+
+/* Modal Form Stuff */
+$(document).ready(function(){
+
+  var appForm = $("#applicationForm") ;
+  appForm.openModal();
+
+  appForm.on('submit', function(e){
+    e.preventDefault();
+    var formData = {
+      name    : $.trim($(this).find('#name').val()),
+      email   : $.trim($(this).find('#email').val()),
+      phone   : $.trim($(this).find('#phone').val()),
+      details : $.trim($(this).find('#details').val())
+    };
+
+    // TODO: send to Google spreadsheet
+
+
+  });
+
+});
