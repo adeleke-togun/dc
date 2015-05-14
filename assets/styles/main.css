@@ -2,46 +2,6 @@ body {
   background: #ffffff;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-  line-height: 1.125em;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: normal;
-}
-
-h1 {
-  font -size: 5.375em;
-  line-height: 1.636em;
-  margin: 0;
-}
-
-h2 {
-  font-size: 1.125em;
-  margin: 1em 0;
-}
-
-h3 {
-  font-size: 1.125em;
-  margin: 0.8em 0;
-}
-
-h4 {
-  font-size: 1.125em;
-  margin: 0.8em 0;
-}
-
-p {
-  font-size: 0.875em;
-  margin: 1.286em 0;
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    font-size: 75%
-  }
 }
 
 #section0 .poster {
@@ -63,42 +23,17 @@ p {
   font-family: Raleway, sans-serif;
 }
 
-<<<<<<< Updated upstream
-#section2 #aLot {
-||||||| merged common ancestors
-#section2 #aLot{
-=======
 #section2 .section2-headline-1 {
->>>>>>> Stashed changes
   font-style: italic;
   font-size: 18px;
   font-weight: normal !important;
 }
 
-<<<<<<< Updated upstream
-#section2 #nowWe {
-||||||| merged common ancestors
-#section2 #nowWe{
-=======
 #section2 .section2-headline-2 {
->>>>>>> Stashed changes
   font-size: 18px;
   font-weight: bold;
 }
 
-<<<<<<< Updated upstream
-#section2 #weAre {
-  color: #636363;
-  margin-top: 30px;
-  font-weight: normal !important;
-  font-size: 19px;
-||||||| merged common ancestors
-#section2 #weAre{
-  color: #636363;
-  margin-top: 30px;
-  font-weight: normal !important;
-  font-size: 19px;
-=======
 .section2-grid {
   color: #999;
   font-size: 16px;
@@ -108,7 +43,138 @@ p {
 .promo-caption {
   font-size: 26px;
   color: #00BFFF;
->>>>>>> Stashed changes
+}
+
+#section2 .row {
+  border: 0px solid red;
+  margin-bottom: 0px;
+  margin-top: 0!important;
+}
+
+#section2 .imgs {
+  width: 100px;
+}
+
+#section2 .support {
+  margin-top: 35px !important;
+}
+
+#section2 .support .col {
+  text-align: center;
+  vertical-align: text-top;
+  border: 0px solid red;
+}
+
+.poster h1 {
+  font-size: 2em;
+}
+
+header {
+  padding: 20px 35px;
+  color: #fbfbef;
+}
+
+header h1,
+ul,
+img {
+  display: inline;
+  vertical-align: middle;
+}
+
+header ul {
+  padding: 10px 25px;
+  background: #2ECCFA;
+  color: #fbfbef;
+}
+
+.text-poster {
+  background-color: #2ECCFA;
+  color: #fbfbef;
+  width: 30em;
+  margin: 18em 3em;
+  font-size: 1em;
+  padding: 15px 15px;
+}
+
+ul.countdown {
+  list-style: none;
+  margin: 75px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+ul.countdown li {
+  display: inline-block;
+}
+
+ul.countdown li span {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  color: #efefef;
+}
+
+ul.countdown li.seperator {
+  font-size: 80px;
+  line-height: 70px;
+  vertical-align: top;
+}
+
+ul.countdown li p {
+  color: #a7abb1;
+  font-size: 14px;
+}
+/* Required */
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+media screen and (max-width: 500px) {
+  body {
+    font-size: 75%
+  }
+}
+
+#section0 .poster {
+  background: url(../img/boy.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#section1 {
+  background-color: #00BFFF;
+}
+
+#section2 {
+  margin-top: -10px;
+}
+
+#section2 .section2-headline-1 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal !important;
+}
+
+#section2 .section2-headline-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#section2 .promo-caption {
+  color: #636363;
+  margin-top: 30px;
+  font-weight: normal !important;
+  font-size: 19px;
 }
 
 #section2 .row {
@@ -192,7 +258,6 @@ ul.countdown li p {
   font-size: 14px;
 }
 
-<<<<<<< Updated upstream
 #section0 .poster-overlay {
   position: absolute;
   top: 0;
@@ -239,15 +304,3 @@ ul.countdown li p {
 #header {
   top: 0px;
 }
-||||||| merged common ancestors
-=======
-/* Required */
-
-.hidden{
-  opacity: 0;
-}
-
-.visible{
-  opacity: 1;
-}
->>>>>>> Stashed changes
