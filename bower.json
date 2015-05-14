@@ -5,6 +5,8 @@
     "jquery": "~2.1.4",
     "materialize": "~0.96.1",
     "normalize.css": "~3.0.3",
-    "fullpage.js": "~2.6.5"
+    "fullpage.js": "~2.6.5",
+    "countdownjs": "~2.5.2",
+    "downcount": "~1.0.0"
   }
 }
