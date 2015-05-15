@@ -9,20 +9,21 @@ var dc = {
     };
   },
 
-  scrollFire: function(){
+  /*scrollFire: function(){
 		var options = [
 	    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
 	    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
 	  ];
 	  Materialize.scrollFire(options);
-  },
+  },*/
 
   fullpage: function () {
     $('#fullpage').fullpage({
-      sectionsColor: ['#1bbc9b'],
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#menu',
-      scrollingSpeed: 600
+      sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+      navigation: true,
+      navigationPosition: 'right'
     });
   },
 
@@ -37,7 +38,7 @@ var dc = {
 
   init: function () {
     dc.getBrowserWindow();
-    dc.scrollFire();
+    //dc.scrollFire();
     dc.fullpage();
     dc.countdown();
   }
