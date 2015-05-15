@@ -25,6 +25,8 @@ var dc = {
       menu: '#header',
       responsive: 200,
       scrollingSpeed: 1000,
+      navigation: true,
+      navigationPosition: 'right',
       afterResize: function() {
         $('section .wrapper').each(function() {
           dc.centerContent($(this));
