@@ -108,17 +108,4 @@ $(document).ready(function(){
 
     // TODO: send to Google spreadsheet
   });
-
-  // $(window).scroll(function() { console.log('am here'); console.log($(window).scrollTop(),$('we-are').offset().top);
-  //   if( $(window).scrollTop() >= $('#we-are').offset().top ) {
-  //     $('#we-are').removeClass('fadeUp'); console.log('adding class');
-  //     $('#we-will').removeClass('fadeUp');
-  //     $('#we-give').removeClass('fadeUp');
-  //   } else {
-  //     $('#we-are').addClass('fadeUp'); console.log('removing class');
-  //     $('#we-will').addClass('fadeUp');
-  //     $('#we-give').addClass('fadeUp');
-  //   }
-  // });
-
 });
