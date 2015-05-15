@@ -21,7 +21,8 @@ var dc = {
     $('#fullpage').fullpage({
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#menu',
-      sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+      sectionsColor: ['#1bbc9b'],
+      scrollingSpeed: 600,
       navigation: true,
       navigationPosition: 'right'
     });
