@@ -21,18 +21,18 @@
 }
 
 .fadeUp { 
-  -webkit-animation: moveFromBottom 1500ms ease;
-  -moz-animation: moveFromTop 1500ms ease;
-  -ms-animation: moveFromTop 1500ms ease;
+  -webkit-animation: moveFromBottom 2100ms ease;
+  -moz-animation: moveFromTop 2100ms ease;
+  -ms-animation: moveFromTop 2100ms ease;
 }
 @-webkit-keyframes moveFromBottom {
   from {
     opacity: 0;
-    -webkit-transform: translateY(200%);
-    -moz-transform: translateY(200%);
-    -ms-transform: translateY(200%);
-    -o-transform: translateY(200%);
-    transform: translateY(200%)
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    transform: translateY(30%)
 
   }
   to {
