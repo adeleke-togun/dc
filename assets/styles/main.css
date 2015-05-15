@@ -266,7 +266,9 @@ COUNT DOWN PAGE
 .timer {
   z-index: 20;
 }
-
+.inner-container{
+  margin-top: 10%;
+}
 
 h3#deadline-text {
   color: #efefef;
