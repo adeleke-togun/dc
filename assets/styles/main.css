@@ -38,12 +38,6 @@ p {
   margin: 1.286em 0;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    font-size: 75%
-  }
-}
-
 #section2 {
   margin-top: -10px;
   font-family: Raleway, sans-serif;
@@ -91,42 +85,6 @@ p {
   border: 0px solid red;
 }
 
-/*ul,
-img {
-  display: inline;
-  vertical-align: middle;
-}*/
-
-ul.countdown {
-  list-style: none;
-  margin: 75px 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-}
-
-ul.countdown li {
-  display: inline-block;
-}
-
-ul.countdown li span {
-  font-size: 80px;
-  font-weight: 300;
-  line-height: 80px;
-  color: #efefef;
-}
-
-ul.countdown li.seperator {
-  font-size: 80px;
-  line-height: 70px;
-  vertical-align: top;
-  color: #ffffff;
-}
-
-ul.countdown li p {
-  color: #a7abb1;
-  font-size: 14px;
-}
 /* Required */
 
 .hidden {
@@ -228,6 +186,7 @@ ul.countdown li.seperator {
   line-height: 70px;
   vertical-align: top;
   font-weight: 200;
+  color: #ffffff;
 }
 
 ul.countdown li p {
@@ -237,6 +196,11 @@ ul.countdown li p {
 
 .unit {
   font-weight: 300;
+}
+.deadline-div{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /************************
@@ -266,13 +230,108 @@ COUNT DOWN PAGE
 .timer {
   z-index: 20;
 }
-.inner-container{
-  margin-top: 10%;
-}
+
 
 h3#deadline-text {
   color: #efefef;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2.0em;
+}
+.inner-container{
+  margin-top: 10%;
 }
 
+@media screen and (min-width: 725px) and (max-width: 950px) {
+  ul.countdown {
+    list-style: none;
+    margin: 75px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  ul.countdown li span {
+    font-size: 95px;
+    font-weight: 90;
+    line-height: 80px;
+    color: #efefef;
+  }
+
+  ul.countdown li p {
+    color: #efefef;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 725px) {
+  h3#deadline-text {
+    font-weight: 300px;
+    font-size: 1.5em;
+  }
+
+  ul.countdown li {
+    display: inline-block;
+  }
+
+  ul.countdown li span {
+    font-size: 75px;
+    font-weight: 200;
+    line-height: 80px;
+    color: #efefef;
+  }
+
+  ul.countdown li.seperator {
+    font-size: 50px;
+    line-height: 70px;
+    vertical-align: top;
+    font-weight: 200;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 519px){
+  .inner-container{
+    margin-top: 15%;
+  }
+
+  h3#deadline-text {
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+
+  .deadline-div{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  ul.countdown {
+    list-style: none;
+    margin: 75px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  ul.countdown li {
+    display: inline-block;
+  }
+
+  ul.countdown li span {
+    font-size: 50px;
+    line-height: 80px;
+    color: #efefef;
+  }
+
+  ul.countdown li.seperator {
+    font-size: 30px;
+    line-height: 70px;
+    vertical-align: top;
+    color: #ffffff;
+  }
+
+  ul.countdown li p {
+    color: #efefef;
+    font-size: 14px;
+  }
+}
