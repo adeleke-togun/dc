@@ -33,6 +33,16 @@ var dc = {
       onLeave: function(index, nextIndex, direction) {
         console.log('on leave', index, nextIndex);
         dc.checkInview(index, nextIndex, direction);
+
+        if(nextIndex === 3) {
+          $('#we-are').addClass('fadeUp'); 
+          $('#we-will').addClass('fadeUp');
+          $('#we-give').addClass('fadeUp');
+        } else {
+          $('#we-are').removeClass('fadeUp'); 
+          $('#we-will').removeClass('fadeUp');
+          $('#we-give').removeClass('fadeUp');
+        }
       }
     });
   },
@@ -97,8 +107,18 @@ $(document).ready(function(){
     };
 
     // TODO: send to Google spreadsheet
-
-
   });
+
+  // $(window).scroll(function() { console.log('am here'); console.log($(window).scrollTop(),$('we-are').offset().top);
+  //   if( $(window).scrollTop() >= $('#we-are').offset().top ) {
+  //     $('#we-are').removeClass('fadeUp'); console.log('adding class');
+  //     $('#we-will').removeClass('fadeUp');
+  //     $('#we-give').removeClass('fadeUp');
+  //   } else {
+  //     $('#we-are').addClass('fadeUp'); console.log('removing class');
+  //     $('#we-will').addClass('fadeUp');
+  //     $('#we-give').addClass('fadeUp');
+  //   }
+  // });
 
 });
