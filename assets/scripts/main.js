@@ -154,9 +154,11 @@ $(document).ready(function(){
               $formView.find('#details').val('');
 
               // close all modal and reset all views
+              appForm.find('button').show();
               appForm.closeModal();
               $successView.hide();
               $formView.show();
+
             });
           });
         });
