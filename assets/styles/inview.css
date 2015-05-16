@@ -72,6 +72,10 @@
   }
 }
 
+#companies {
+  text-align: center;
+}
+
 .override {
   margin-left: auto !important;
   margin-right: auto !important;

@@ -13,8 +13,8 @@ h3 {
 }
 
 h1 {
-  font -size: 5.375em;
-  line-height: 1.636em;
+  /*font-size: 5.375em;
+  line-height: 1.636em;*/
   margin: 0;
 }
 
@@ -36,6 +36,9 @@ h4 {
 p {
   font-size: 0.875em;
   margin: 1.286em 0;
+}
+#applyBtn{
+  background-color: #04b8cf;
 }
 
 @media screen and (max-width: 500px) {
@@ -315,7 +318,7 @@ h3#deadline-text {
   }
 }
 
-@media screen and (max-width: 519px){
+@media screen and (min-width: 371px) and (max-width: 519px){
   h3#deadline-text {
     font-weight: 300;
     font-size: 1.5em;
@@ -324,14 +327,6 @@ h3#deadline-text {
   .deadline-div{
     width: 80%;
     margin: 0 auto;
-    text-align: center;
-  }
-
-  ul.countdown {
-    list-style: none;
-    margin: 75px 0;
-    padding: 0;
-    display: block;
     text-align: center;
   }
 
@@ -347,13 +342,26 @@ h3#deadline-text {
 
   ul.countdown li.seperator {
     font-size: 30px;
-    line-height: 70px;
-    vertical-align: top;
-    color: #ffffff;
   }
 
-  ul.countdown li p {
-    color: #efefef;
-    font-size: 14px;
+}
+@media screen and (max-width: 370px){
+  h3#deadline-text {
+    font-weight: 200;
   }
+
+  ul.countdown li {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  ul.countdown li span {
+    font-size: 40px !important;
+    }
+
+  ul.countdown li.seperator {
+    font-size: 30px;
+    line-height: 70px;
+    }
+
 }
