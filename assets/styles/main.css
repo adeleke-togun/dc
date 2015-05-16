@@ -372,17 +372,19 @@ h3#deadline-text {
 }
 
 /* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #000;
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=tel]:focus + label {
+  color: #04b8cf;
 }
 
 /* label underline focus color */
 .input-field input[type=text]:focus ,
 .input-field input[type=email]:focus ,
-.input-field textarea:focus ,
+.input-field .materialize-textarea:focus ,
 .input-field input[type=tel]:focus{
-  border-bottom: 1px solid #04b8cf;
-  box-shadow: 0 1px 0 0 #04b8cf;
+  border-bottom: 1px solid #04b8cf !important;
+  box-shadow: 0 1px 0 0 #04b8cf !important;
 }
 
 /* icon prefix focus color */
