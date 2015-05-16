@@ -97,11 +97,11 @@ var dc = {
     dc.countdown();
   }
 };
-$(document).ready(dc.init);
-
 
 /* Modal Form Stuff */
 $(document).ready(function(){
+
+  dc.init();
 
   var $progressView = $('#progressView');
   var $successView = $('#successView');
