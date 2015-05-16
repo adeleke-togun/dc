@@ -80,6 +80,13 @@ $(document).ready(dc.init);
 /* Modal Form Stuff */
 $(document).ready(function(){
 
+  var $progressView = $('#progressView');
+  var $successView = $('#successView');
+  var $formView = $('#formView');
+
+  $progressView.hide();
+  $successView.hide();
+
   var appForm = $("#applicationForm");
 
   $("#applyBtn").on('click', function(e){
@@ -89,15 +96,49 @@ $(document).ready(function(){
 
   appForm.on('submit', function(e){
     e.preventDefault();
+    var $this = $(this);
     var formData = {
-      name    : $.trim($(this).find('#name').val()),
-      email   : $.trim($(this).find('#email').val()),
-      phone   : $.trim($(this).find('#phone').val()),
-      details : $.trim($(this).find('#details').val())
+      'entry.568454251'    : $.trim($(this).find('#name').val()),
+      'entry.1388249163'   : $.trim($(this).find('#email').val()),
+      'entry.1125549394'   : $.trim($(this).find('#phone').val()),
+      'entry.1862649055' : $.trim($(this).find('#details').val()),
+      draftResponse:[,,"6241827102495986109"],
+      pageHistory:0,
+      fbzx:6241827102495986109
     };
 
-    // TODO: send to Google spreadsheet
+    var formUrl = 'https://docs.google.com/forms/d/16f27i_hMbetjTq-jtwkyyQNtfmMAEomoPzpWd00WkIk/formResponse';
 
+    $.ajax({
+      type: 'POST',
+      url: formUrl,
+      data: formData,
+      beforeSend: function(){
+        $this.find('button').hide();
+        $formView.fadeOut('fast', function(){
+          $progressView.fadeIn('fast');
+        });
+      },
+      complete: function(data){
+        $progressView.fadeOut('fast', function(){
+          $successView.fadeIn('slow', function(){
+            $this.show().delay(2000).fadeIn('fast', function(){
+
+              // clear form
+              $formView.find('#name').val('');
+              $formView.find('#email').val('');
+              $formView.find('#phone').val('');
+              $formView.find('#details').val('');
+
+              // close all modal and reset all views
+              appForm.closeModal();
+              $successView.hide();
+              $formView.show();
+            });
+          });
+        });
+      }
+    });
 
   });
 
