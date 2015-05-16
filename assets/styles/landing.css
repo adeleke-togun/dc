@@ -9,23 +9,20 @@
   height: 100%
 }
 
-.poster .row .group {
-  padding: 0 35px;
+.poster .row > .group {
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
 }
-
-/*@media screen and (min-width: 1100px) {
+div.poster div.row .col {
+   padding: 0 !important;
+}
+@media screen and (min-width: 1100px) {
   .kontainer {
-<<<<<<< HEAD
-    max-width: 1024px;
-=======
     max-width: 1200px;
->>>>>>> 1206f551e97dc13a928f3d6fb22fadd0541bea03
   }
-}*/
+}
 
 .group:after {
   content: ".";
@@ -35,17 +32,20 @@
   visibility: hidden;
 }
 
-header {
-  color: #fff;
+#header.top h1 {
+  background: url(../img/logo.png) no-repeat top left;
 }
 
-#mainNav {
+#header {
   position: fixed;
-  z-index: 999;
-  top: 0;
+  height: auto;
+  display: block;
+  top: 0px;
+  width: 100%;
+  background: transparent;
+  z-index: 9;
   font-weight: 500;
-  background: #FFF;
-  color: #00BCD4;
+  color: #fff;
   -webkit-transition: all 2000ms ease;
   -moz-transition: all 2000ms ease;
   -ms-transition: all 2000ms ease;
@@ -53,9 +53,8 @@ header {
   transition: all 2000ms ease;
 }
 
-#mainNav.top {
-  background: 0 0;
-  box-shadow: none;
+header .logo-link {
+  display: inline-block;
 }
 
 header ul .btn,
@@ -63,6 +62,10 @@ header ul .btn-large {
   text-decoration: none;
   background-color: #04b8cf;
   color: #fff;
+}
+
+header .sidenav {
+  margin: 20px 0 0 0;
 }
 
 header ul .btn:hover,
@@ -80,18 +83,14 @@ header h1 {
   text-shadow: none;
   color: transparent;
   line-height: 1;
-  background: url(../img/logo-white.png);
-  width: 209px;
-  height: 63px;
-  display: inline-block;
+  background: url(../img/logo.png) no-repeat top right;
+  background-size: cover !important;
+  width: 150px;
+  height: 53px;
 }
 
 .leading-text {
-/*<<<<<<< HEAD
-  background-color: #04b8cf;
-=======*/
   background-color: rgba(4, 184, 207, 0.8);
-/*>>>>>>> 1206f551e97dc13a928f3d6fb22fadd0541bea03*/
   color: #fbfbef;
   font-size: 1em;
   padding: 15px !important;
@@ -112,4 +111,9 @@ header h1 {
   line-height: 1.5;
   font-style: italic;
   font-size: 1em;
+}
+
+header ul li:hover,
+header ul li.active {
+  background-color: transparent;
 }
