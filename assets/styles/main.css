@@ -44,12 +44,55 @@ p {
   }
 }
 
+#section0 .poster {
+  background: url(../img/boy.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #section1 {
   background-color: #00BFFF;
 }
 
+#section2 .section2-headline-1 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal !important;
+}
+
+#section2 .section2-headline-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#section2 .promo-caption {
+  color: #636363;
+  margin-top: 30px;
+  font-weight: normal !important;
+  font-size: 19px;
+}
+
+#section2 .imgs {
+  width: 100px;
+}
+
+#section2 .support {
+  margin-top: 35px !important;
+}
+
+#section2 .support .col {
+  text-align: center;
+  vertical-align: text-top;
+  border: 0px solid red;
+}
+
 #section2 {
-  margin-top: -10px;
+  position: relative;
+  margin-top: 40px;
   font-family: Raleway, sans-serif;
 }
 
@@ -70,15 +113,13 @@ p {
   line-height: 26px;
 }
 
+.content .col-grid {
+  margin-top: 10px;
+}
+
 .promo-caption {
   font-size: 26px;
   color: #00BFFF;
-}
-
-#section2 .row {
-  border: 0px solid red;
-  margin-bottom: 0px;
-  margin-top: 0!important;
 }
 
 #section2 .imgs {
@@ -89,17 +130,40 @@ p {
   margin-top: 35px !important;
 }
 
-#section2 .support .col {
-  text-align: center;
-  vertical-align: text-top;
-  border: 0px solid red;
+.supported-label {
+  color: #999;
+  font-size: 10px;
 }
 
-/*ul,
-img {
-  display: inline;
-  vertical-align: middle;
-}*/
+.list {
+  margin-top: 60px;
+}
+
+.footer-line {
+  height: -2px;
+}
+
+.ul-supporter-grid li {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+}
+
+li img.img-supporter-grid {
+  margin: 0 auto;
+  height: 30px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+img.img-supporter-grid:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+}
 
 ul.countdown {
   list-style: none;
@@ -138,62 +202,6 @@ ul.countdown li p {
 
 .visible {
   opacity: 1;
-}
-
-#section0 .poster {
-  background: url(../img/boy.jpg) center center no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#section1 {
-  background-color: #00BFFF;
-}
-
-#section2 {
-  margin-top: -10px;
-}
-
-#section2 .section2-headline-1 {
-  font-style: italic;
-  font-size: 18px;
-  font-weight: normal !important;
-}
-
-#section2 .section2-headline-2 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#section2 .promo-caption {
-  color: #636363;
-  margin-top: 30px;
-  font-weight: normal !important;
-  font-size: 19px;
-}
-
-#section2 .row {
-  border: 0px solid red;
-  margin-bottom: 0px;
-  margin-top: 0!important;
-}
-
-#section2 .imgs {
-  width: 100px;
-}
-
-#section2 .support {
-  margin-top: 35px !important;
-}
-
-#section2 .support .col {
-  text-align: center;
-  vertical-align: text-top;
-  border: 0px solid red;
 }
 
 .poster h1 {
