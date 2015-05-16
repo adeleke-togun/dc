@@ -23,7 +23,7 @@ var dc = {
       sectionsColor: ['#434343'],
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#header',
-      responsive: 200,
+      responsive: 500,
       scrollingSpeed: 1000,
       afterResize: function() {
         $('section .wrapper').each(function() {
@@ -33,7 +33,12 @@ var dc = {
       onLeave: function(index, nextIndex, direction) {
         console.log('on leave', index, nextIndex);
         dc.checkInview(index, nextIndex, direction);
-      }
+        dc.checkNav(index, nextIndex, direction);
+      },
+      //Accessibility
+      keyboardScrolling: true,
+      animateAnchor: true,
+      recordHistory: true
     });
   },
   centerContent: function($container) {
@@ -56,6 +61,13 @@ var dc = {
       $(this).addClass('inview');
     });
   },
+  checkNav: function(index, nextIndex, direction) {
+    if (index == 2 && direction == 'down') {
+      $('#header').removeClass('top');
+    } else if (nextIndex == 2) {
+      $('#header').addClass('top');
+    }
+  },
   countdown: function() {
     $('.countdown').downCount({
       date: '5/27/2015 23:59:59',
@@ -75,30 +87,21 @@ var dc = {
   }
 };
 $(document).ready(dc.init);
-
-
 /* Modal Form Stuff */
-$(document).ready(function(){
-
+$(document).ready(function() {
   var appForm = $("#applicationForm");
-
-  $("#applyBtn").on('click', function(e){
+  $("#applyBtn").on('click', function(e) {
     e.preventDefault();
     appForm.openModal();
   });
-
-  appForm.on('submit', function(e){
+  appForm.on('submit', function(e) {
     e.preventDefault();
     var formData = {
-      name    : $.trim($(this).find('#name').val()),
-      email   : $.trim($(this).find('#email').val()),
-      phone   : $.trim($(this).find('#phone').val()),
-      details : $.trim($(this).find('#details').val())
+      name: $.trim($(this).find('#name').val()),
+      email: $.trim($(this).find('#email').val()),
+      phone: $.trim($(this).find('#phone').val()),
+      details: $.trim($(this).find('#details').val())
     };
-
     // TODO: send to Google spreadsheet
-
-
   });
-
 });
