@@ -120,15 +120,22 @@ $(document).ready(function(){
   appForm.on('submit', function(e){
     e.preventDefault();
     var $this = $(this);
+    var phone = $.trim($(this).find('#phone').val());
     var formData = {
       'entry.568454251'    : $.trim($(this).find('#name').val()),
       'entry.1388249163'   : $.trim($(this).find('#email').val()),
-      'entry.1125549394'   : $.trim($(this).find('#phone').val()),
+      'entry.1125549394'   : phone ,
       'entry.1862649055' : $.trim($(this).find('#details').val()),
       draftResponse:[,,"6241827102495986109"],
       pageHistory:0,
       fbzx:6241827102495986109
     };
+
+    //validate phone number
+    if(/^\+?[\d]+$/.test(phone)){
+
+    }
+
 
     var formUrl = 'https://docs.google.com/forms/d/16f27i_hMbetjTq-jtwkyyQNtfmMAEomoPzpWd00WkIk/formResponse';
 
