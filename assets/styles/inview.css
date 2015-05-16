@@ -19,3 +19,72 @@
   -o-transform: translateY(0);
   transform: translateY(0)
 }
+
+.fadeUp { 
+  -webkit-animation: moveFromBottom 2100ms ease;
+  -moz-animation: moveFromBottom 2100ms ease;
+  -ms-animation: moveFromBottom 2100ms ease;
+}
+
+.fadeFromRight { 
+  -webkit-animation: moveFromRight 2100ms ease;
+  -moz-animation: moveFromRight 2100ms ease;
+  -ms-animation: moveFromRight 2100ms ease;
+}
+
+@-webkit-keyframes moveFromBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    transform: translateY(30%)
+
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%)
+  }
+}
+
+@-webkit-keyframes moveFromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+    transform: translateX(30%)
+
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%)
+  }
+}
+
+.override {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: table;
+}
+
+.sm-scr {
+  display: table;
+  width: initial !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media only screen and (max-width: 520px) {
+  .sm-scr { width: 100% !important;}
+}
