@@ -220,6 +220,7 @@ COUNT DOWN PAGE
 .dark-layer {
     background-color: rgba(71, 71, 71, 0.4);
     position: absolute;
+    display: table;
     top: 0;
     left: 0;
     width: 100%;
@@ -238,7 +239,8 @@ h3#deadline-text {
   font-size: 2.0em;
 }
 .inner-container{
-  margin-top: 15%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 725px) and (max-width: 950px) {
