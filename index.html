@@ -23,37 +23,52 @@
   <!-- Modal Form -->
   <div id="applicationForm" class="modal modal-fixed-footer">
     <form>
-      <div class="modal-content col s8">
-        <div class="col s8">
+      <div class="modal-content col s8 m12 l12">
+
+        <div id="successView" class="col s12 m12 l12">
+          <h2 class="center-align">
+        <img class="center-align" src="assets/img/success.png"/> <br/>
+        Thank you for your interest, we will get back to you.
+      </h2>
+        </div>
+
+        <div id="progressView" class="col s12 m12 l12">
+          <h2 class="center-align">Please wait while your application is being sent</h2>
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </div>
+
+        <div id="formView" class="col s12 m12 l12">
           <h1 class="center-align">Get in touch</h1>
 
           <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-action-account-circle prefix"></i>
+            <div class="input-field col s8 m12 l12">
+              <i class="mdi-action-account-circle prefix hide-on-med-and-down"></i>
               <input id="name" type="text" class="validate" required>
               <label for="name">Name</label>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-communication-email prefix"></i>
+            <div class="input-field col s8 m12 l12">
+              <i class="mdi-communication-email prefix hide-on-med-and-down"></i>
               <input id="email" type="email" class="validate" required>
               <label for="email">Email</label>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-communication-phone prefix"></i>
+            <div class="input-field col s8 m12 l12">
+              <i class="mdi-communication-phone prefix hide-on-med-and-down"></i>
               <input id="phone" type="tel" class="validate" required>
               <label for="phone">Phone</label>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-communication-forum prefix"></i>
+            <div class="input-field col s8 m12 l12">
+              <i class="mdi-communication-forum prefix hide-on-med-and-down"></i>
               <textarea id="details" class="materialize-textarea" required></textarea>
               <label for="details">brief detail of what you want</label>
             </div>
@@ -68,11 +83,11 @@
   </div>
 
   <header id="header" class="top">
-    <div class="kontainer group">
+    <div class="kontainer group animatedParent">
       <a href="/" class="logo-link">
         <h1>Now We Give</h1>
       </a>
-      <ul class="right sidenav">
+      <ul class="right sidenav animated slow bounceInDown">
         <li><a href="#" id="applyBtn" class="waves-effect waves-light btn">Apply</a></li>
       </ul>
     </div>
@@ -80,12 +95,12 @@
 
   <div id="fullpage">
     <section class="section" id="section0">
-      <div class="poster">
+      <div class="poster animatedParent">
         <div class="row">
           <div class="group">
             <div class="kontainer group">
               <div class="col l5">
-                <div class="text-box leading-text">
+                <div class="text-box leading-text animated slow bounceInDown">
                   <h2>Great deal for a Great Cause</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas turpis hendrerit ante auctor bibendum</p>
                 </div>
@@ -98,13 +113,13 @@
 
     <section class="section" id="section1">
       <div class="dark-layer">
-        <div class="inner-container">
+        <div id='deadline-container' class="inner-container">
           <div class="row">
             <div class="deadline-div">
               <h3 id="deadline-text">Application for orders close on the 27th May, 2015</h3>
             </div>
           </div>
-          <div class="row animated timer" data-appear-top-offset='50'>
+          <div id="we-dead" class="row animated timer" data-appear-top-offset='50'>
             <ul class="countdown">
               <li>
                 <span class="days">00</span>
@@ -127,6 +142,9 @@
               </li>
             </ul>
           </div>
+          <div class="center sidenav">
+            <a href="#" class="waves-effect waves-light btn" id="applyBtn">Apply</a>
+          </div>
         </div>
       </div>
     </section>
@@ -134,7 +152,7 @@
     <!-- Bottom Page UDO: working on this/remodelled by Jihdeh -->
     <section class="container section" id="section2">
       <br/>
-      <div class="row center">
+      <div class="row center content">
         <div class="row">
           <h5 class="center-align">
           <small class="section2-headline-1">A lot has been given to us</small>
@@ -142,30 +160,41 @@
           </h5>
         </div>
         <br />
-        <div class="col s12 m4 l4">
+
+        <div id="we-are" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/we_are.png" />
             <p class="promo-caption">We Are</p>
             <p class="light center section2-grid">a group of amazingly skilled software engineers brought together by our love for building great software for the purpose of helping people in need.</p>
           </div>
         </div>
-        <div class="col s12 m4 l4">
+
+        <div id="we-will" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/building.png" />
             <p class="promo-caption">We Will</p>
             <p class="light center section2-grid">build premium quality websites <b>for you</b> with one year web hosting at an affordable cost of &#8358;30,000</p>
           </div>
         </div>
-        <div class="col s12 m4 l4">
+
+        <div id="we-give" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/child.png" />
             <p class="promo-caption">We'll Give</p>
             <p class="light center section2-grid"><b>all profits</b> from this drive to the Hearts of Gold Children's <a href='http://www.hoghospice.org/index.php?option=com_content&view=article&id=47&Itemid=54' target='_blank'>Hospice </a>because we believe that Every Child deserves to be joyous.</p>
           </div>
         </div>
       </div>
+
       <!-- List of companies -->
-      <div class="row support center">
-        <div class="col s12 m4 l4"><img src="assets/img/red.png" align="top" width="82px" /></div>
-        <div class="col s12 m4 l4"><img src="assets/img/cchub.png" width="230px" /></div>
-        <div class="col s12 m4 l4"><img src="assets/img/andela.png" width="50px" /></div>
+      <div id="companies" class='list center override'>
+        <div class='supported-label center'>
+          <p>Supported By</p>
+        </div>
+        <ul class="ul-supporter-grid">
+          <li class="li-supporter-grid"><img src="assets/img/red.png" class="img-supporter-grid" align="top" width="52px" /></li>
+          <li class="li-supporter-grid"><img src="assets/img/cchub.png" class="img-supporter-grid" width="130px" /></li>
+          <li class="li-supporter-grid"><img src="assets/img/andela-logo.png" class="img-supporter-grid" width="100px" /></li>
+        </ul>
+        <hr class='footer-line' />
+        <small>&copy; 2015.</small>
       </div>
     </section>
   </div>

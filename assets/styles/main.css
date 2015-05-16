@@ -13,8 +13,8 @@ h3 {
 }
 
 h1 {
-  font -size: 5.375em;
-  line-height: 1.636em;
+  /*font-size: 5.375em;
+  line-height: 1.636em;*/
   margin: 0;
 }
 
@@ -37,62 +37,14 @@ p {
   font-size: 0.875em;
   margin: 1.286em 0;
 }
-
-#section2 {
-  margin-top: -10px;
-  font-family: Raleway, sans-serif;
+#applyBtn{
+  background-color: #04b8cf;
 }
 
-#section2 .section2-headline-1 {
-  font-style: italic;
-  font-size: 18px;
-  font-weight: normal !important;
-}
-
-#section2 .section2-headline-2 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.section2-grid {
-  color: #999;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.promo-caption {
-  font-size: 26px;
-  color: #00BFFF;
-}
-
-#section2 .row {
-  border: 0px solid red;
-  margin-bottom: 0px;
-  margin-top: 0!important;
-}
-
-#section2 .imgs {
-  width: 100px;
-}
-
-#section2 .support {
-  margin-top: 35px !important;
-}
-
-#section2 .support .col {
-  text-align: center;
-  vertical-align: text-top;
-  border: 0px solid red;
-}
-
-/* Required */
-
-.hidden {
-  opacity: 0;
-}
-
-.visible {
-  opacity: 1;
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 75%
+  }
 }
 
 #section0 .poster {
@@ -107,10 +59,6 @@ p {
 
 #section1 {
   background-color: #00BFFF;
-}
-
-#section2 {
-  margin-top: -10px;
 }
 
 #section2 .section2-headline-1 {
@@ -131,12 +79,6 @@ p {
   font-size: 19px;
 }
 
-#section2 .row {
-  border: 0px solid red;
-  margin-bottom: 0px;
-  margin-top: 0!important;
-}
-
 #section2 .imgs {
   width: 100px;
 }
@@ -149,6 +91,91 @@ p {
   text-align: center;
   vertical-align: text-top;
   border: 0px solid red;
+}
+
+#section2 {
+  position: relative;
+  margin-top: 40px;
+  font-family: Raleway, sans-serif;
+}
+
+#section2 .section2-headline-1 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal !important;
+}
+
+#section2 .section2-headline-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section2-grid {
+  color: #999;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.content .col-grid {
+  margin-top: 10px;
+}
+
+.promo-caption {
+  font-size: 26px;
+  color: #00BFFF;
+}
+
+#section2 .imgs {
+  width: 100px;
+}
+
+#section2 .support {
+  margin-top: 35px !important;
+}
+
+.supported-label {
+  color: #999;
+  font-size: 10px;
+}
+
+.list {
+  margin-top: 50px;
+}
+
+.footer-line {
+  height: -2px;
+}
+
+.ul-supporter-grid li {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+}
+
+li img.img-supporter-grid {
+  margin: 0 auto;
+  height: 30px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+img.img-supporter-grid:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+}
+
+/* Required */
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .poster h1 {
@@ -291,7 +318,7 @@ h3#deadline-text {
   }
 }
 
-@media screen and (max-width: 519px){
+@media screen and (min-width: 371px) and (max-width: 519px){
   h3#deadline-text {
     font-weight: 300;
     font-size: 1.5em;
@@ -300,14 +327,6 @@ h3#deadline-text {
   .deadline-div{
     width: 80%;
     margin: 0 auto;
-    text-align: center;
-  }
-
-  ul.countdown {
-    list-style: none;
-    margin: 75px 0;
-    padding: 0;
-    display: block;
     text-align: center;
   }
 
@@ -323,13 +342,53 @@ h3#deadline-text {
 
   ul.countdown li.seperator {
     font-size: 30px;
-    line-height: 70px;
-    vertical-align: top;
-    color: #ffffff;
   }
 
-  ul.countdown li p {
-    color: #efefef;
-    font-size: 14px;
-  }
 }
+@media screen and (max-width: 370px){
+  h3#deadline-text {
+    font-weight: 200;
+  }
+
+  ul.countdown li {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  ul.countdown li span {
+    font-size: 40px !important;
+    }
+
+  ul.countdown li.seperator {
+    font-size: 30px;
+    line-height: 70px;
+    }
+
+}
+
+/* modal form customizations */
+#applicationForm button{
+  background-color: #04b8cf !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=tel]:focus + label {
+  color: #04b8cf;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus ,
+.input-field input[type=email]:focus ,
+.input-field .materialize-textarea:focus ,
+.input-field input[type=tel]:focus{
+  border-bottom: 1px solid #04b8cf !important;
+  box-shadow: 0 1px 0 0 #04b8cf !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #04b8cf;
+}
+
