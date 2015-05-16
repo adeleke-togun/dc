@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/inview.css">
   <link rel="stylesheet" href="assets/styles/landing.css">
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/css3-animate-it.js"></script>
 </head>
 
 <body>
@@ -77,7 +79,7 @@
                 <a href="/">
                   <h1>Now We Give</h1>
                 </a>
-                <ul class="right sidenav animated bounceInDown">
+                <ul class="right sidenav animated slow bounceInDown">
                   <li><a href="#" id="applyBtn" class="waves-effect waves-light btn">Apply</a></li>
                 </ul>
               </div>
@@ -88,7 +90,7 @@
           <div class="group">
             <div class="kontainer">
               <div class="col l5">
-                <div class="text-box leading-text animated bounceInDown">
+                <div class="text-box leading-text animated slow bounceInDown">
                   <h2>Great deal for a Great Cause</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas turpis hendrerit ante auctor bibendum</p>
                 </div>
@@ -100,31 +102,39 @@
     </section>
 
     <section class="section" id="section1">
-      <div class="row animated" data-appear-top-offset='50'>
-        <ul class="countdown">
-          <li>
-            <span class="days">00</span>
-            <p class="days_ref">days</p>
-          </li>
-          <li class="seperator">.</li>
-          <li>
-            <span class="hours">00</span>
-            <p class="hours_ref">hours</p>
-          </li>
-          <li class="seperator">:</li>
-          <li>
-            <span class="minutes">00</span>
-            <p class="minutes_ref">minutes</p>
-          </li>
-          <li class="seperator">:</li>
-          <li>
-            <span class="seconds">00</span>
-            <p class="seconds_ref">seconds</p>
-          </li>
-        </ul>
+      <div class="dark-layer">
+        <div id='deadline-container' class="inner-container">
+          <div class="row">
+            <div class="deadline-div">
+              <h3 id="deadline-text">Application for orders close on the 27th May, 2015</h3>
+            </div>
+          </div>
+          <div id="we-dead" class="row animated timer" data-appear-top-offset='50'>
+            <ul class="countdown">
+              <li>
+                <span class="days">00</span>
+                <p class="days_ref unit">days</p>
+              </li>
+              <li class="seperator">&nbsp.&nbsp</li>
+              <li>
+                <span class="hours">&nbsp00</span>
+                <p class="hours_ref unit">hours</p>
+              </li>
+              <li class="seperator">&nbsp:&nbsp</li>
+              <li>
+                <span class="minutes">00</span>
+                <p class="minutes_ref unit">minutes</p>
+              </li>
+              <li class="seperator">&nbsp:&nbsp</li>
+              <li>
+                <span class="seconds">00</span>
+                <p class="seconds_ref unit">seconds</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-
 
     <!-- Bottom Page UDO: working on this/remodelled by Jihdeh -->
     <section class="container section" id="section2">
@@ -137,19 +147,22 @@
           </h5>
         </div>
         <br />
-        <div class="col s12 m4 l4 col-grid">
+
+        <div id="we-are" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/we_are.png" />
             <p class="promo-caption">We Are</p>
             <p class="light center section2-grid">a group of amazingly skilled software engineers brought together by our love for building great software for the purpose of helping people in need.</p>
           </div>
         </div>
-        <div class="col s12 m4 l4 col-grid">
+
+        <div id="we-will" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/building.png" />
             <p class="promo-caption">We Will</p>
             <p class="light center section2-grid">build premium quality websites <b>for you</b> with one year web hosting at an affordable cost of &#8358;30,000</p>
           </div>
         </div>
-        <div class="col s12 m4 l4 col-grid">
+
+        <div id="we-give" class="col s12 m4 l4 col-grid">
           <div class="center promo"><img class="imgs" src="assets/img/child.png" />
             <p class="promo-caption">We'll Give</p>
             <p class="light center section2-grid"><b>all profits</b> from this drive to the Hearts of Gold Children's <a href='http://www.hoghospice.org/index.php?option=com_content&view=article&id=47&Itemid=54' target='_blank'>Hospice </a>because we believe that Every Child deserves to be joyous.</p>
@@ -158,8 +171,7 @@
       </div>
 
       <!-- List of companies -->
-      <div class='list center'>
-        
+      <div id="companies" class='list center override'>
         <div class='supported-label center'>
           <p>Supported By</p>
         </div>
@@ -169,7 +181,7 @@
           <li class="li-supporter-grid"><img src="assets/img/andela.png" class="img-supporter-grid" width="30px" /></li>
         </ul>
         <hr class='footer-line'/>
-        &copy; 2015.
+        <small>&copy; 2015.</small>
       </div>
     </section>
   </div>

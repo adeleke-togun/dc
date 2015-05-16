@@ -31,8 +31,31 @@ var dc = {
         });
       },
       onLeave: function(index, nextIndex, direction) {
-        console.log('on leave', index, nextIndex);
-        dc.checkInview(index, nextIndex, direction);
+        dc.checkInview(index, nextIndex, direction); 
+        var count = 0; 
+
+        if(nextIndex === 3) {
+          var ids = ['#we-are', '#we-will', '#we-give'];
+          $(ids[count]).addClass('fadeUp'); 
+          count+=1;
+          $(ids[count]).hide();
+          $(ids[count+1]).hide();
+          $('#companies').hide();
+
+          var intervalId = setInterval(function() { 
+            if(count === 3) {
+              $('#companies').show();
+              $('#companies').addClass('fadeFromRight');
+              clearInterval(intervalId);
+            } else {
+              $(ids[count]).show();
+              $(ids[count]).addClass('fadeUp');
+            }
+            count++;
+          }, 1000);
+        } else {
+          $('#we-are').removeClass('fadeUp'); 
+        }
       }
     });
   },
@@ -61,7 +84,7 @@ var dc = {
       date: '5/27/2015 23:59:59',
       offset: +0
     }, function() {
-      alert('Sorry, we are no longer accepting others right now!');
+      alert('Sorry, we are no longer accepting orders right now!');
     });
   },
   init: function() {
@@ -97,8 +120,5 @@ $(document).ready(function(){
     };
 
     // TODO: send to Google spreadsheet
-
-
   });
-
 });
