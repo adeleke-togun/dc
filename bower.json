@@ -7,6 +7,7 @@
     "normalize.css": "~3.0.3",
     "fullpage.js": "~2.6.5",
     "countdownjs": "~2.5.2",
-    "downcount": "~1.0.0"
+    "downcount": "~1.0.0",
+    "slimscroll": "~1.3.3"
   }
 }

@@ -392,3 +392,7 @@ h3#deadline-text {
   color: #04b8cf;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
+

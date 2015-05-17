@@ -23,10 +23,8 @@ var dc = {
       sectionsColor: ['#434343'],
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       menu: '#header',
-      responsive: 500,
       scrollingSpeed: 1000,
-
-      //Accessibility
+      scrollOverflow: true,
       keyboardScrolling: true,
       animateAnchor: true,
       recordHistory: true,
@@ -117,6 +115,15 @@ var dc = {
 $(document).ready(function() {
 
   dc.init();
+
+  $('div.slimScrollBar').slimScroll({
+      width: '300px',
+      size: '50px',
+      position: 'left',
+      color: '#ffcc00',
+      railVisible: false,
+      railColor: '#222',
+  });
 
   var $progressView = $('#progressView');
   var $successView = $('#successView');
