@@ -153,7 +153,7 @@ $(document).ready(function() {
 
     //validate phone number
     if(!/^\+?[\d]+$/.test($.trim(phone.val()))){
-      alert('please enter a valid phone number');
+      $('#errAlert').fadeIn('fast').delay(2500).fadeOut('fast');
       phone.focus();
       exit();
     }
