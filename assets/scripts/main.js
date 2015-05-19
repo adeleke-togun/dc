@@ -28,7 +28,8 @@ var dc = {
       keyboardScrolling: true,
       animateAnchor: true,
       recordHistory: true,
-
+      navigation: true,
+      navigationPosition: 'right',
 
       afterResize: function() {
         $('section .wrapper').each(function() {
